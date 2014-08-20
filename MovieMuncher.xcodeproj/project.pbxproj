@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462A788D19A53A1200C43F72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A788C19A53A1200C43F72 /* Cocoa.framework */; };
+		462A789719A53A1200C43F72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 462A789519A53A1200C43F72 /* InfoPlist.strings */; };
+		462A789919A53A1200C43F72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 462A789819A53A1200C43F72 /* main.m */; };
+		462A789D19A53A1200C43F72 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 462A789B19A53A1200C43F72 /* Credits.rtf */; };
+		462A78A019A53A1200C43F72 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 462A789F19A53A1200C43F72 /* MMDocument.m */; };
+		462A78A319A53A1200C43F72 /* MMDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462A78A119A53A1200C43F72 /* MMDocument.xib */; };
+		462A78A619A53A1200C43F72 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462A78A419A53A1200C43F72 /* MainMenu.xib */; };
+		462A78A819A53A1200C43F72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462A78A719A53A1200C43F72 /* Images.xcassets */; };
+		462A78AF19A53A1200C43F72 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A78AE19A53A1200C43F72 /* XCTest.framework */; };
+		462A78B019A53A1200C43F72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A788C19A53A1200C43F72 /* Cocoa.framework */; };
+		462A78B819A53A1200C43F72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 462A78B619A53A1200C43F72 /* InfoPlist.strings */; };
+		462A78BA19A53A1200C43F72 /* MovieMuncherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 462A78B919A53A1200C43F72 /* MovieMuncherTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		462A78B119A53A1200C43F72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 462A788119A53A1200C43F72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462A788819A53A1200C43F72;
+			remoteInfo = MovieMuncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		462A788919A53A1200C43F72 /* MovieMuncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieMuncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		462A788C19A53A1200C43F72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		462A788F19A53A1200C43F72 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		462A789019A53A1200C43F72 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		462A789119A53A1200C43F72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		462A789419A53A1200C43F72 /* MovieMuncher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovieMuncher-Info.plist"; sourceTree = "<group>"; };
+		462A789619A53A1200C43F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		462A789819A53A1200C43F72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		462A789A19A53A1200C43F72 /* MovieMuncher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieMuncher-Prefix.pch"; sourceTree = "<group>"; };
+		462A789C19A53A1200C43F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		462A789E19A53A1200C43F72 /* MMDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDocument.h; sourceTree = "<group>"; };
+		462A789F19A53A1200C43F72 /* MMDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMDocument.m; sourceTree = "<group>"; };
+		462A78A219A53A1200C43F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MMDocument.xib; sourceTree = "<group>"; };
+		462A78A519A53A1200C43F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		462A78A719A53A1200C43F72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		462A78AD19A53A1200C43F72 /* MovieMuncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieMuncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		462A78AE19A53A1200C43F72 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		462A78B519A53A1200C43F72 /* MovieMuncherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovieMuncherTests-Info.plist"; sourceTree = "<group>"; };
+		462A78B719A53A1200C43F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		462A78B919A53A1200C43F72 /* MovieMuncherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieMuncherTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		462A788619A53A1200C43F72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462A788D19A53A1200C43F72 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462A78AA19A53A1200C43F72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462A78B019A53A1200C43F72 /* Cocoa.framework in Frameworks */,
+				462A78AF19A53A1200C43F72 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		462A788019A53A1200C43F72 = {
+			isa = PBXGroup;
+			children = (
+				462A789219A53A1200C43F72 /* MovieMuncher */,
+				462A78B319A53A1200C43F72 /* MovieMuncherTests */,
+				462A788B19A53A1200C43F72 /* Frameworks */,
+				462A788A19A53A1200C43F72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		462A788A19A53A1200C43F72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				462A788919A53A1200C43F72 /* MovieMuncher.app */,
+				462A78AD19A53A1200C43F72 /* MovieMuncherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		462A788B19A53A1200C43F72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				462A788C19A53A1200C43F72 /* Cocoa.framework */,
+				462A78AE19A53A1200C43F72 /* XCTest.framework */,
+				462A788E19A53A1200C43F72 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		462A788E19A53A1200C43F72 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				462A788F19A53A1200C43F72 /* AppKit.framework */,
+				462A789019A53A1200C43F72 /* CoreData.framework */,
+				462A789119A53A1200C43F72 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		462A789219A53A1200C43F72 /* MovieMuncher */ = {
+			isa = PBXGroup;
+			children = (
+				462A789E19A53A1200C43F72 /* MMDocument.h */,
+				462A789F19A53A1200C43F72 /* MMDocument.m */,
+				462A78A119A53A1200C43F72 /* MMDocument.xib */,
+				462A78A419A53A1200C43F72 /* MainMenu.xib */,
+				462A78A719A53A1200C43F72 /* Images.xcassets */,
+				462A789319A53A1200C43F72 /* Supporting Files */,
+			);
+			path = MovieMuncher;
+			sourceTree = "<group>";
+		};
+		462A789319A53A1200C43F72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				462A789419A53A1200C43F72 /* MovieMuncher-Info.plist */,
+				462A789519A53A1200C43F72 /* InfoPlist.strings */,
+				462A789819A53A1200C43F72 /* main.m */,
+				462A789A19A53A1200C43F72 /* MovieMuncher-Prefix.pch */,
+				462A789B19A53A1200C43F72 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		462A78B319A53A1200C43F72 /* MovieMuncherTests */ = {
+			isa = PBXGroup;
+			children = (
+				462A78B919A53A1200C43F72 /* MovieMuncherTests.m */,
+				462A78B419A53A1200C43F72 /* Supporting Files */,
+			);
+			path = MovieMuncherTests;
+			sourceTree = "<group>";
+		};
+		462A78B419A53A1200C43F72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				462A78B519A53A1200C43F72 /* MovieMuncherTests-Info.plist */,
+				462A78B619A53A1200C43F72 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		462A788819A53A1200C43F72 /* MovieMuncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462A78BD19A53A1200C43F72 /* Build configuration list for PBXNativeTarget "MovieMuncher" */;
+			buildPhases = (
+				462A788519A53A1200C43F72 /* Sources */,
+				462A788619A53A1200C43F72 /* Frameworks */,
+				462A788719A53A1200C43F72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieMuncher;
+			productName = MovieMuncher;
+			productReference = 462A788919A53A1200C43F72 /* MovieMuncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		462A78AC19A53A1200C43F72 /* MovieMuncherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462A78C019A53A1200C43F72 /* Build configuration list for PBXNativeTarget "MovieMuncherTests" */;
+			buildPhases = (
+				462A78A919A53A1200C43F72 /* Sources */,
+				462A78AA19A53A1200C43F72 /* Frameworks */,
+				462A78AB19A53A1200C43F72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				462A78B219A53A1200C43F72 /* PBXTargetDependency */,
+			);
+			name = MovieMuncherTests;
+			productName = MovieMuncherTests;
+			productReference = 462A78AD19A53A1200C43F72 /* MovieMuncherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		462A788119A53A1200C43F72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rocco Bowling";
+				TargetAttributes = {
+					462A78AC19A53A1200C43F72 = {
+						TestTargetID = 462A788819A53A1200C43F72;
+					};
+				};
+			};
+			buildConfigurationList = 462A788419A53A1200C43F72 /* Build configuration list for PBXProject "MovieMuncher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 462A788019A53A1200C43F72;
+			productRefGroup = 462A788A19A53A1200C43F72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				462A788819A53A1200C43F72 /* MovieMuncher */,
+				462A78AC19A53A1200C43F72 /* MovieMuncherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		462A788719A53A1200C43F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462A789719A53A1200C43F72 /* InfoPlist.strings in Resources */,
+				462A78A819A53A1200C43F72 /* Images.xcassets in Resources */,
+				462A789D19A53A1200C43F72 /* Credits.rtf in Resources */,
+				462A78A319A53A1200C43F72 /* MMDocument.xib in Resources */,
+				462A78A619A53A1200C43F72 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462A78AB19A53A1200C43F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462A78B819A53A1200C43F72 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		462A788519A53A1200C43F72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462A78A019A53A1200C43F72 /* MMDocument.m in Sources */,
+				462A789919A53A1200C43F72 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462A78A919A53A1200C43F72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462A78BA19A53A1200C43F72 /* MovieMuncherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		462A78B219A53A1200C43F72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 462A788819A53A1200C43F72 /* MovieMuncher */;
+			targetProxy = 462A78B119A53A1200C43F72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		462A789519A53A1200C43F72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462A789619A53A1200C43F72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		462A789B19A53A1200C43F72 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462A789C19A53A1200C43F72 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		462A78A119A53A1200C43F72 /* MMDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462A78A219A53A1200C43F72 /* Base */,
+			);
+			name = MMDocument.xib;
+			sourceTree = "<group>";
+		};
+		462A78A419A53A1200C43F72 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462A78A519A53A1200C43F72 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		462A78B619A53A1200C43F72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462A78B719A53A1200C43F72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		462A78BB19A53A1200C43F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		462A78BC19A53A1200C43F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		462A78BE19A53A1200C43F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovieMuncher/MovieMuncher-Prefix.pch";
+				INFOPLIST_FILE = "MovieMuncher/MovieMuncher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		462A78BF19A53A1200C43F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovieMuncher/MovieMuncher-Prefix.pch";
+				INFOPLIST_FILE = "MovieMuncher/MovieMuncher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		462A78C119A53A1200C43F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MovieMuncher.app/Contents/MacOS/MovieMuncher";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovieMuncher/MovieMuncher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MovieMuncherTests/MovieMuncherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		462A78C219A53A1200C43F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MovieMuncher.app/Contents/MacOS/MovieMuncher";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovieMuncher/MovieMuncher-Prefix.pch";
+				INFOPLIST_FILE = "MovieMuncherTests/MovieMuncherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		462A788419A53A1200C43F72 /* Build configuration list for PBXProject "MovieMuncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462A78BB19A53A1200C43F72 /* Debug */,
+				462A78BC19A53A1200C43F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		462A78BD19A53A1200C43F72 /* Build configuration list for PBXNativeTarget "MovieMuncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462A78BE19A53A1200C43F72 /* Debug */,
+				462A78BF19A53A1200C43F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		462A78C019A53A1200C43F72 /* Build configuration list for PBXNativeTarget "MovieMuncherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462A78C119A53A1200C43F72 /* Debug */,
+				462A78C219A53A1200C43F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 462A788119A53A1200C43F72 /* Project object */;
+}

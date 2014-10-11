@@ -7,6 +7,7 @@
 //
 
 #import "MMDocument.h"
+#import "SPMuncher.h"
 
 @implementation MMDocument
 
@@ -34,7 +35,7 @@
 
 + (BOOL)autosavesInPlace
 {
-    return YES;
+    return NO;
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
@@ -46,14 +47,32 @@
     return nil;
 }
 
+
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
 {
-    // Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
-    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
-    // If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
-    NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
-    @throw exception;
-    return YES;
+    NSError * error;
+    QTMovie * inputMovie = [[QTMovie alloc] initWithData:data error:&error];
+    QTMovie * outputMovie = [[QTMovie alloc] initToWritableFile:@"/tmp/Combined.mov" error:NULL];
+    
+    if(error != NULL){
+        NSLog(@"error loading .mov: %@", [error localizedDescription]);
+        return NO;
+    }
+    
+    [SPMuncher convertMovie:inputMovie toMovie:outputMovie];
+    
+    NSString * fileName = [[[self fileName] lastPathComponent] stringByDeletingPathExtension];
+    NSSavePanel *savePanel = [NSSavePanel savePanel];
+    long returnCode = [savePanel runModalForDirectory:NSHomeDirectory() file:[NSString stringWithFormat:@"%@.alpha.mov", fileName]];
+    NSString * path = [savePanel filename];
+    
+    if (returnCode == NSOKButton)
+    {
+        [outputMovie writeToFile:path
+                     withAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [NSNumber numberWithBool:YES], QTMovieFlatten, NULL]];
+    }
+        
+    return NO;
 }
 
 @end

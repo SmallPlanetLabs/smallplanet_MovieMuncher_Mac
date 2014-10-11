@@ -9,18 +9,18 @@
 		<dict>
 			<key>CFBundleTypeExtensions</key>
 			<array>
-				<string>moviemuncher</string>
+				<string>mov</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
 			<string></string>
 			<key>CFBundleTypeName</key>
-			<string>DocumentType</string>
+			<string>Quicktime Movie</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>????</string>
 			</array>
 			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
+			<string>Viewer</string>
 			<key>NSDocumentClass</key>
 			<string>MMDocument</string>
 		</dict>

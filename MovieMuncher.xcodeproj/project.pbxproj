@@ -19,6 +19,15 @@
 		462A78B019A53A1200C43F72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A788C19A53A1200C43F72 /* Cocoa.framework */; };
 		462A78B819A53A1200C43F72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 462A78B619A53A1200C43F72 /* InfoPlist.strings */; };
 		462A78BA19A53A1200C43F72 /* MovieMuncherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 462A78B919A53A1200C43F72 /* MovieMuncherTests.m */; };
+		462A78C519A53C0A00C43F72 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A78C419A53C0A00C43F72 /* QuickTime.framework */; };
+		462A78C719A53C3A00C43F72 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A78C619A53C3A00C43F72 /* QTKit.framework */; };
+		C409977119AA1ACC003C44DC /* libncurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C409976F19AA1ABF003C44DC /* libncurses.dylib */; };
+		C4465E4019A855500084648E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4465E3F19A855500084648E /* main.m */; };
+		C4465E4619A856080084648E /* SPMuncher.m in Sources */ = {isa = PBXBuildFile; fileRef = C4465E4519A856080084648E /* SPMuncher.m */; };
+		C4465E4719A856080084648E /* SPMuncher.m in Sources */ = {isa = PBXBuildFile; fileRef = C4465E4519A856080084648E /* SPMuncher.m */; };
+		C4465E4819A856C20084648E /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A78C619A53C3A00C43F72 /* QTKit.framework */; };
+		C4465E4919A856C20084648E /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462A78C419A53C0A00C43F72 /* QuickTime.framework */; };
+		C49CCBF319AACCA60091AFE6 /* libncurses.5.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C49CCBF219AACCA60091AFE6 /* libncurses.5.4.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +39,18 @@
 			remoteInfo = MovieMuncher;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4465E3B19A855500084648E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		462A788919A53A1200C43F72 /* MovieMuncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieMuncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +73,14 @@
 		462A78B519A53A1200C43F72 /* MovieMuncherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovieMuncherTests-Info.plist"; sourceTree = "<group>"; };
 		462A78B719A53A1200C43F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		462A78B919A53A1200C43F72 /* MovieMuncherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieMuncherTests.m; sourceTree = "<group>"; };
+		462A78C419A53C0A00C43F72 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		462A78C619A53C3A00C43F72 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		C409976F19AA1ABF003C44DC /* libncurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncurses.dylib; path = usr/lib/libncurses.dylib; sourceTree = SDKROOT; };
+		C4465E3D19A855500084648E /* munch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = munch; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4465E3F19A855500084648E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4465E4419A856080084648E /* SPMuncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMuncher.h; sourceTree = "<group>"; };
+		C4465E4519A856080084648E /* SPMuncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMuncher.m; sourceTree = "<group>"; };
+		C49CCBF219AACCA60091AFE6 /* libncurses.5.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncurses.5.4.dylib; path = usr/lib/libncurses.5.4.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C409977119AA1ACC003C44DC /* libncurses.dylib in Frameworks */,
+				462A78C719A53C3A00C43F72 /* QTKit.framework in Frameworks */,
+				462A78C519A53C0A00C43F72 /* QuickTime.framework in Frameworks */,
 				462A788D19A53A1200C43F72 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +104,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4465E3A19A855500084648E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49CCBF319AACCA60091AFE6 /* libncurses.5.4.dylib in Frameworks */,
+				C4465E4819A856C20084648E /* QTKit.framework in Frameworks */,
+				C4465E4919A856C20084648E /* QuickTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +122,7 @@
 			children = (
 				462A789219A53A1200C43F72 /* MovieMuncher */,
 				462A78B319A53A1200C43F72 /* MovieMuncherTests */,
+				C4465E3E19A855500084648E /* munch */,
 				462A788B19A53A1200C43F72 /* Frameworks */,
 				462A788A19A53A1200C43F72 /* Products */,
 			);
@@ -90,6 +133,7 @@
 			children = (
 				462A788919A53A1200C43F72 /* MovieMuncher.app */,
 				462A78AD19A53A1200C43F72 /* MovieMuncherTests.xctest */,
+				C4465E3D19A855500084648E /* munch */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +141,10 @@
 		462A788B19A53A1200C43F72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C49CCBF219AACCA60091AFE6 /* libncurses.5.4.dylib */,
+				C409976F19AA1ABF003C44DC /* libncurses.dylib */,
+				462A78C619A53C3A00C43F72 /* QTKit.framework */,
+				462A78C419A53C0A00C43F72 /* QuickTime.framework */,
 				462A788C19A53A1200C43F72 /* Cocoa.framework */,
 				462A78AE19A53A1200C43F72 /* XCTest.framework */,
 				462A788E19A53A1200C43F72 /* Other Frameworks */,
@@ -123,6 +171,8 @@
 				462A78A419A53A1200C43F72 /* MainMenu.xib */,
 				462A78A719A53A1200C43F72 /* Images.xcassets */,
 				462A789319A53A1200C43F72 /* Supporting Files */,
+				C4465E4419A856080084648E /* SPMuncher.h */,
+				C4465E4519A856080084648E /* SPMuncher.m */,
 			);
 			path = MovieMuncher;
 			sourceTree = "<group>";
@@ -155,6 +205,14 @@
 				462A78B619A53A1200C43F72 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4465E3E19A855500084648E /* munch */ = {
+			isa = PBXGroup;
+			children = (
+				C4465E3F19A855500084648E /* main.m */,
+			);
+			path = munch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +253,23 @@
 			productReference = 462A78AD19A53A1200C43F72 /* MovieMuncherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C4465E3C19A855500084648E /* munch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4465E4319A855500084648E /* Build configuration list for PBXNativeTarget "munch" */;
+			buildPhases = (
+				C4465E3919A855500084648E /* Sources */,
+				C4465E3A19A855500084648E /* Frameworks */,
+				C4465E3B19A855500084648E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = munch;
+			productName = munch;
+			productReference = C4465E3D19A855500084648E /* munch */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +282,9 @@
 				TargetAttributes = {
 					462A78AC19A53A1200C43F72 = {
 						TestTargetID = 462A788819A53A1200C43F72;
+					};
+					C4465E3C19A855500084648E = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -225,6 +303,7 @@
 			targets = (
 				462A788819A53A1200C43F72 /* MovieMuncher */,
 				462A78AC19A53A1200C43F72 /* MovieMuncherTests */,
+				C4465E3C19A855500084648E /* munch */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +338,7 @@
 			files = (
 				462A78A019A53A1200C43F72 /* MMDocument.m in Sources */,
 				462A789919A53A1200C43F72 /* main.m in Sources */,
+				C4465E4619A856080084648E /* SPMuncher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +347,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				462A78BA19A53A1200C43F72 /* MovieMuncherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4465E3919A855500084648E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4465E4019A855500084648E /* main.m in Sources */,
+				C4465E4719A856080084648E /* SPMuncher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +440,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -384,6 +474,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -401,8 +492,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovieMuncher/MovieMuncher-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "MovieMuncher/MovieMuncher-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,8 +507,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovieMuncher/MovieMuncher-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "MovieMuncher/MovieMuncher-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +555,36 @@
 			};
 			name = Release;
 		};
+		C4465E4119A855500084648E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4465E4219A855500084648E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -479,6 +604,7 @@
 				462A78BF19A53A1200C43F72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		462A78C019A53A1200C43F72 /* Build configuration list for PBXNativeTarget "MovieMuncherTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +613,16 @@
 				462A78C219A53A1200C43F72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4465E4319A855500084648E /* Build configuration list for PBXNativeTarget "munch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4465E4119A855500084648E /* Debug */,
+				C4465E4219A855500084648E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <QuickTime/QuickTime.h>
+#import <QTKit/QTKit.h>
 
 @interface MMDocument : NSDocument
+{
+    
+}
 
 @end

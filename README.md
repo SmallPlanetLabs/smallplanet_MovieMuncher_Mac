@@ -1,5 +1,17 @@
 # MovieMuncher
 
+##### What is MovieMuncher?
+We've long yearned for playing movies in our apps with a transparent background. MovieMuncher is a utility that processes video in a way to make it possible to rock transparent video. Given a specially formatted .mov or a sequence of .png files, MovieMuncher will generate a .mov double the width of the original asset(s). The left half of the resulting movie looks like the normal asset(s) against a black background and the right half shows an alpha mask. At runtime, these information streams can be recombined to make transparent video.
+
+##### Usage
+    munch input.mov
+Generates input_alpha.mov
+
+    munch input.mov -o output.mov<
+Generates output.mov
+
+    munch input001.png input002.png ...
+Generates input001_alpha.mov
 
 ## License
 
